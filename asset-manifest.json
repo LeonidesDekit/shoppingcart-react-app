@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/shoppingcart-react-app/static/css/main.230362f4.css",
-    "main.js": "/shoppingcart-react-app/static/js/main.0cc4d46c.js",
-    "static/media/confirmed.jpg": "/shoppingcart-react-app/static/media/confirmed.accb13106c6c6759c4ad.jpg",
-    "static/media/bootstrap-icons.woff?": "/shoppingcart-react-app/static/media/bootstrap-icons.4753c5ba57962b4d7bf8.woff",
-    "static/media/bootstrap-icons.woff2?": "/shoppingcart-react-app/static/media/bootstrap-icons.6d63d0501e5ed7b79dab.woff2",
-    "static/media/mango.png": "/shoppingcart-react-app/static/media/mango.cb9d815612235b5f87c4.png",
-    "index.html": "/shoppingcart-react-app/index.html",
-    "main.230362f4.css.map": "/shoppingcart-react-app/static/css/main.230362f4.css.map",
-    "main.0cc4d46c.js.map": "/shoppingcart-react-app/static/js/main.0cc4d46c.js.map"
+    "main.css": "/static/css/main.18aed99d.css",
+    "main.js": "/static/js/main.db143475.js",
+    "static/media/confirmed.jpg": "/static/media/confirmed.accb13106c6c6759c4ad.jpg",
+    "static/media/bootstrap-icons.woff?": "/static/media/bootstrap-icons.4753c5ba57962b4d7bf8.woff",
+    "static/media/bootstrap-icons.woff2?": "/static/media/bootstrap-icons.6d63d0501e5ed7b79dab.woff2",
+    "static/media/mango.png": "/static/media/mango.cb9d815612235b5f87c4.png",
+    "index.html": "/index.html",
+    "main.18aed99d.css.map": "/static/css/main.18aed99d.css.map",
+    "main.db143475.js.map": "/static/js/main.db143475.js.map"
   },
   "entrypoints": [
-    "static/css/main.230362f4.css",
-    "static/js/main.0cc4d46c.js"
+    "static/css/main.18aed99d.css",
+    "static/js/main.db143475.js"
   ]
 }
