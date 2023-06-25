@@ -3,8 +3,8 @@ import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 const orderApi = createApi({
   reducerPath: "orderApi",
   baseQuery: fetchBaseQuery({
-    // baseUrl: "https://localhost:7043/api/",
-    baseUrl: "https://redmangoapiname.azurewebsites.net/api/",
+    baseUrl: "https://localhost:7043/api/",
+    // baseUrl: "https://redmangoapiname.azurewebsites.net/api/",
     prepareHeaders: (headers: Headers, api) => {
       const token = localStorage.getItem("token");
       token && headers.append("Authorization", "Bearer " + token);
@@ -24,12 +24,22 @@ const orderApi = createApi({
       invalidatesTags: ["Orders"],
     }),
     getAllOrders: builder.query({
-      query: (userId) => ({
+      query: ({ userId, searchString, status, pageNumber, pageSize }) => ({
         url: "order",
         params: {
-          userId: userId,
+          ...(userId && { userId }),
+          ...(searchString && { searchString }),
+          ...(status && { status }),
+          ...(pageNumber && { pageNumber }),
+          ...(pageSize && { pageSize }),
         },
       }),
+      transformResponse(apiResponse: { result: any }, meta: any) {
+        return {
+          apiResponse,
+          totalRecords: meta.response.headers.get("X-Pagination"),
+        };
+      },
       providesTags: ["Orders"],
     }),
     getOrderDetails: builder.query({
