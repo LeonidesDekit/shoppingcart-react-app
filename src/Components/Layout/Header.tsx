@@ -25,7 +25,7 @@ function Header() {
   const handleLogout = () => {
     localStorage.removeItem("token");
     dispatch(setLoggedInUser({ ...emptyUserState }));
-    navigate("/");
+    navigate("/shoppingcart-react-app");
   };
 
   return (
@@ -53,7 +53,10 @@ function Header() {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0 w-100">
               <li className="nav-item">
-                <NavLink className="nav-link active" aria-current="page" to="/">
+                <NavLink
+                  className="nav-link active"
+                  aria-current="page"
+                  to="/shoppingcart-react-app">
                   Home
                 </NavLink>
               </li>

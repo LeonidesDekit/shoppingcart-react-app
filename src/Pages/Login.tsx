@@ -38,7 +38,7 @@ function Login() {
       localStorage.setItem("token", token);
 
       dispatch(setLoggedInUser({ fullName, email, id, role }));
-      navigate("/");
+      navigate("/shoppingcart-react-app");
     } else if (response.error) {
       setError(response.error.data.errorMessages[0]);
     }

@@ -62,7 +62,7 @@ function App() {
       <Header />
       <div className="pb-5">
         <Routes>
-          <Route path="/" element={<Home></Home>}></Route>
+          <Route path="/shoppingcart-react-app" element={<Home></Home>}></Route>
           <Route
             path="/menuItemDetails/:menuItemId"
             element={<MenuItemDetails />}></Route>
